@@ -1,11 +1,10 @@
 const inp = document.querySelector('#page-number');
 
-
-
 const btn = document.querySelector('.button');
 
 btn.addEventListener('click', () => {
-   getImages(inp.value, onDataReceived);
+   getImages(inp.value)
+      .then(onDataReceived);
 });
 
 
